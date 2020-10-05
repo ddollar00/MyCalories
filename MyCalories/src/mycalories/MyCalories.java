@@ -3,6 +3,7 @@ package mycalories;
 import java.util.*;
 import javax.swing.*;
 
+
 public class MyCalories {
 
     private static String gen;
@@ -10,9 +11,10 @@ public class MyCalories {
 
     public static void main(String[] args) {
        ArrayList<String>q=new ArrayList<>();
-       
       
-
+  char e = 'p';
+      
+      while(e != 'e'){
         Calculate c = new Calculate();
         gen = JOptionPane.showInputDialog(null, "Male of female(M/W):  ");
 
@@ -31,6 +33,14 @@ public class MyCalories {
             q.add(c.CalorresM(cal));
         }
         System.out.println(q);
+        
+        System.out.println("Type 1 to calculate another amount next another User,Type e to exit");
+        
+        Scanner kb=new Scanner(System.in);
+        e =kb.next().charAt(0);
+      }
+      
+        
 
     }
 
