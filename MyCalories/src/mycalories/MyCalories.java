@@ -9,7 +9,9 @@ public class MyCalories {
     private static int cal;
 
     public static void main(String[] args) {
-       int g;
+       ArrayList<String>q=new ArrayList<>();
+       
+      
 
         Calculate c = new Calculate();
         gen = JOptionPane.showInputDialog(null, "Male of female(M/W):  ");
@@ -18,6 +20,7 @@ public class MyCalories {
             cal = Integer.parseInt(JOptionPane.showInputDialog("Enter then number of calories you have eaten today:  "));
 
             JOptionPane.showMessageDialog(null, c.CalorresM(cal));
+            q.add(c.CalorresM(cal));
 
         }
 
@@ -25,7 +28,9 @@ public class MyCalories {
             cal = Integer.parseInt(JOptionPane.showInputDialog("Enter then number of calories you have eaten today:  "));
 
             JOptionPane.showMessageDialog(null, c.CalorresW(cal));
+            q.add(c.CalorresM(cal));
         }
+        System.out.println(q);
 
     }
 
@@ -40,6 +45,7 @@ class Calories {
         this.calorieM = calorieM;
         this.calorieW = calorieW;
     }
+   
 
     public int getCalorieM() {
         return calorieM;
@@ -81,3 +87,4 @@ class Calculate {
     }
 
 }
+
