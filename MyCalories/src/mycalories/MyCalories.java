@@ -9,7 +9,7 @@ public class MyCalories {
     private static int cal;
 
     public static void main(String[] args) {
-        Scanner key = new Scanner(System.in);
+       int g;
 
         Calculate c = new Calculate();
         gen = JOptionPane.showInputDialog(null, "Male of female(M/W):  ");
