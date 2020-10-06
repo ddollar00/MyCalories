@@ -33,7 +33,7 @@ public class MyCalories {
             q.add(c.CalorresM(cal));
         }
         System.out.println(q);
-        int y;
+
         System.out.println("Type 1 to calculate another amount next another User,Type e to exit");
         
         Scanner kb=new Scanner(System.in);
