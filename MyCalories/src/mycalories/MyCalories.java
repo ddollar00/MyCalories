@@ -34,7 +34,7 @@ public class MyCalories {
         }
         System.out.println(q);
 
-        System.out.println("Type 1 to calculate another amount next another User,Type e to exit");
+        System.out.println("Type any letter to calculate another amount next another User,Type e to exit");
         
         Scanner kb=new Scanner(System.in);
         e =kb.next().charAt(0);
